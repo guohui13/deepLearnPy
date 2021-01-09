@@ -97,3 +97,6 @@ model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['accurac
 model.fit(x_train, y_train, epochs=3, batch_size=512)
 results=model.evaluate(x_test,y_test)
 print(results)
+
+prediction=model.predict(x_test)
+print(prediction)
